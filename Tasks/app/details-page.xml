@@ -1,6 +1,7 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo">
   <StackLayout>
-    <Label text="{{ title }}" cssClass="title"/>
-    <Label text="{{ info }}" cssClass="info" textWrap="true"/>
+    <Label text="{{ Title }}" cssClass="title"/>
+    <Label text="{{ Description }}" cssClass="info" textWrap="true"/>
+    <Switch checked="{{ Complete }}" cssClass="info" />
   </StackLayout>
 </Page>
