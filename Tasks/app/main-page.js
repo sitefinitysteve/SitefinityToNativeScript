@@ -6,13 +6,13 @@ var dialogs = require("ui/dialogs");
 function pageLoaded(args) {
     var page = args.object;
     
-   
     page.bindingContext = viewModel;
 }
 exports.pageLoaded = pageLoaded;
 
-// Navigate to the details page with context set to the data item for specified index
+//Tap event of a "Task"
 function listViewItemTap(args) {
+    //Navigate to the detail item, binding context is the selected "Task" from everlive
     frames.topmost().navigate({
         moduleName: "app/details-page",
         context: args.view.bindingContext

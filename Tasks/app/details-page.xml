@@ -1,7 +1,11 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" navigatedTo="pageNavigatedTo">
   <StackLayout>
     <Label text="{{ Title }}" cssClass="title"/>
-    <Label text="{{ Description }}" cssClass="info" textWrap="true"/>
-    <Switch checked="{{ Complete }}" cssClass="info" />
+    <TextView text="{{ Description }}" cssClass="description" textWrap="true"/>
+    <StackLayout orientation="horizontal">
+        <Label text="Complete" cssClass="label" />
+        <Switch checked="{{ Complete }}" cssClass="info" />
+    </StackLayout>
+    <Button text="Save" tap="saveTask" cssClass="saveTask"/>
   </StackLayout>
 </Page>

@@ -2,7 +2,7 @@
   <GridLayout rows="auto, *">
     <Label text="Sitefinity Tasks" cssClass="title" />
 
-    <ListView items="{{ items }}" itemTap="listViewItemTap" row="1">
+    <ListView items="{{ tasks }}" itemTap="listViewItemTap" row="1">
       <ListView.itemTemplate>
         <Label text="{{ Title }}" cssClass="listItem" />
       </ListView.itemTemplate>

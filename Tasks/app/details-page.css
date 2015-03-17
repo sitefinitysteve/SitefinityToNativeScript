@@ -1,0 +1,14 @@
+.saveTask{
+    margin-top: 20;
+    background-color: #03A9F4;
+    color: #FFFFFF;
+    width: 100;
+    font-size: 25;
+}
+
+.description{
+    margin-top: 20;
+    margin-bottom: 20;
+    font-size: 25;    
+    background-color: #e0e0e0;
+}
